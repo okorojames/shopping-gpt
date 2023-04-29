@@ -15,6 +15,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -34,6 +37,9 @@ body::-webkit-scrollbar-thumb {
   background: var(--main-color);
   border-radius: 10rem;
 }
+img {
+  width: 100%;
+}
 header,
 .app--container {
   padding: 0 4rem;
@@ -41,6 +47,23 @@ header,
 /* nav */
 nav {
   padding: 1.5rem 0;
+  color: var(--grey-three);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.nav--link--rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.nav--link--col--1,
+.nav--link--col--2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 .nav--logo {
   font-family: "Baumans", cursive;
@@ -48,4 +71,65 @@ nav {
   color: var(--main-color);
   font-weight: 600;
   letter-spacing: 1.5px;
+}
+.nav-dashbaord-icon,
+.nav-category-chevron {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.nav-noify-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.nav-search-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.nav--search--form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  box-shadow: 0 0 0 1.5px rgba(134, 142, 150, 0.461);
+  padding: 0.5rem 0.6rem;
+  border-radius: 1rem;
+}
+.nav--search--form input[type="text"] {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.nav--search--form input[type="submit"] {
+  background: var(--main-color);
+  color: var(--light-color);
+  border: 0;
+  outline: 0;
+  border-radius: 0.8rem;
+  padding: 0.5rem 0.8rem;
+}
+.nav--user--profile {
+  height: 4rem;
+  width: 4rem;
+}
+.shopping--bag--icon {
+  position: relative;
+  font-size: 2.4rem;
+}
+.item--numbers {
+  position: absolute;
+  top: -20%;
+  right: -50%;
+  background: rgb(227, 38, 38);
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.15rem;
+  height: 18px;
+  width: 18px;
+  font-size: 1rem;
+  border-radius: 50%;
 }

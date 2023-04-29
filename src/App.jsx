@@ -5,7 +5,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <div className="app--container">
-        <Routes></Routes>
+        <Routes>
+          <Route to="/dashboard" />
+        </Routes>
       </div>
     </BrowserRouter>
   );
