@@ -27,7 +27,6 @@ body {
   font-size: 1.6rem;
   background: var(--light-color);
   color: var(--dark-color);
-  margin-bottom: 300px;
 }
 body::-webkit-scrollbar {
   width: 0.8rem;
@@ -43,6 +42,9 @@ img {
 header,
 .app--container {
   padding: 0 4rem;
+}
+.app--container {
+  min-height: calc(100vh - 74px - 128px);
 }
 /* nav */
 nav {
@@ -80,6 +82,7 @@ nav {
 .nav-noify-icon {
   height: 2.4rem;
   width: 2.4rem;
+  cursor: pointer;
 }
 .nav-search-icon {
   height: 2.4rem;
@@ -112,10 +115,12 @@ nav {
 .nav--user--profile {
   height: 4rem;
   width: 4rem;
+  cursor: pointer;
 }
 .shopping--bag--icon {
   position: relative;
   font-size: 2.4rem;
+  cursor: pointer;
 }
 .item--numbers {
   position: absolute;
@@ -132,4 +137,22 @@ nav {
   width: 18px;
   font-size: 1rem;
   border-radius: 50%;
+}
+/*  */
+.app--container--row {
+  display: grid;
+  grid-template-columns: 250px 3.5fr;
+  /* justify-items: center; */
+  align-items: stretch;
+  gap: 3rem;
+}
+/* category */
+.category--tab {
+  box-shadow: 0 0 0 1.5px var(--grey-three);
+}
+/* footer */
+.footer--container {
+  background: #212529;
+  padding: 4rem 1.5rem;
+  color: var(--light-color);
 }
