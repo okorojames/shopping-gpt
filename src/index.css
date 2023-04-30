@@ -76,12 +76,12 @@ nav {
 }
 .nav-dashbaord-icon,
 .nav-category-chevron {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 2rem;
+  width: 2rem;
 }
 .nav-noify-icon {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 2.5rem;
+  width: 2.5rem;
   cursor: pointer;
 }
 .nav-search-icon {
@@ -113,14 +113,18 @@ nav {
   padding: 0.5rem 0.8rem;
 }
 .nav--user--profile {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   cursor: pointer;
 }
 .shopping--bag--icon {
-  position: relative;
-  font-size: 2.4rem;
   cursor: pointer;
+  height: 2.2rem;
+  width: 2.2rem;
+  fill: var(--grey-three);
+}
+.cart--box {
+  position: relative;
 }
 .item--numbers {
   position: absolute;
@@ -137,6 +141,7 @@ nav {
   width: 18px;
   font-size: 1rem;
   border-radius: 50%;
+  z-index: 22;
 }
 /*  */
 .app--container--row {
@@ -148,7 +153,24 @@ nav {
 }
 /* category */
 .category--tab {
-  box-shadow: 0 0 0 1.5px var(--grey-three);
+  box-shadow: 0 0 0 1.5px rgba(134, 142, 150, 0.204);
+  /* height: 100vh; */
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.tab-category-chevron {
+  rotate: 180deg;
+  transition: 0.4s;
+}
+.all--categories {
+  display: none;
+}
+.toggle--categories.all--categories {
+  display: block;
+}
+.toggle--categories.tab-category-chevron {
+  rotate: 0deg;
 }
 /* footer */
 .footer--container {
