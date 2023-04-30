@@ -28,7 +28,7 @@ const CategoryTab = () => {
             }}
             onClick={toggleCategory}
           >
-            <div style={{ fontWeight: "500" }}>Categories</div>
+            <div style={{ fontWeight: "500" }}>All Categories</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -118,6 +118,91 @@ const CategoryTab = () => {
                 }}
               >
                 Jewelries
+              </label>
+              <br />
+              {/* check five */}
+              <input
+                type="checkbox"
+                id="fashion"
+                style={{ cursor: "pointer" }}
+              />
+              <label
+                htmlFor="fashion"
+                style={{
+                  marginLeft: "6px",
+                  cursor: "pointer",
+                  marginBottom: "8px",
+                }}
+              >
+                Fashion
+              </label>
+              <br />
+              {/* check six */}
+              <input
+                type="checkbox"
+                id="baby-product"
+                style={{ cursor: "pointer" }}
+              />
+              <label
+                htmlFor="baby-product"
+                style={{
+                  marginLeft: "6px",
+                  cursor: "pointer",
+                  marginBottom: "8px",
+                }}
+              >
+                Baby Product
+              </label>
+              <br />
+              {/* check seven */}
+              <input
+                type="checkbox"
+                id="gaming"
+                style={{ cursor: "pointer" }}
+              />
+              <label
+                htmlFor="gaming"
+                style={{
+                  marginLeft: "6px",
+                  cursor: "pointer",
+                  marginBottom: "8px",
+                }}
+              >
+                Gaming
+              </label>
+              <br />
+              {/* check eight */}
+              <input
+                type="checkbox"
+                id="auto-mobile"
+                style={{ cursor: "pointer" }}
+              />
+              <label
+                htmlFor="auto-mobile"
+                style={{
+                  marginLeft: "6px",
+                  cursor: "pointer",
+                  marginBottom: "8px",
+                }}
+              >
+                Auto Mobile
+              </label>
+              <br />
+              {/* check nine */}
+              <input
+                type="checkbox"
+                id="health"
+                style={{ cursor: "pointer" }}
+              />
+              <label
+                htmlFor="health"
+                style={{
+                  marginLeft: "6px",
+                  cursor: "pointer",
+                  marginBottom: "8px",
+                }}
+              >
+                Health
               </label>
               <br />
             </form>

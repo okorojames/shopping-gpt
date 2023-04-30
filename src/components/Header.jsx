@@ -3,7 +3,7 @@ import userIcon from "../assets/images/user-icon.jpg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [itemNumber, setItemNumber] = useState(5);
+  const [itemNumber, setItemNumber] = useState(0);
   return (
     <header>
       <nav>
