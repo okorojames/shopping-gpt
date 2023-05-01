@@ -1,8 +1,26 @@
 import React from "react";
 import useFetch from "../useFetch";
 import loaderIcon from "../assets/images/loader.gif";
+import useCartNumberState from "../hooks-store/useCartNumberState";
 
 const Home = () => {
+  //
+  const titleLimit = 45;
+  // set product title limit
+  const truncateTitle = (title) => {
+    if (title.length > titleLimit) {
+      let slicedTitle = title.slice(0, titleLimit);
+      return slicedTitle + "...";
+    }
+    return title;
+  };
+  //
+  const { cartNumber, setCartNumber } = useCartNumberState();
+  //
+  const IncreCartNumber = () => {
+    setCartNumber(cartNumber + 1);
+    console.log(cartNumber);
+  };
   //
   const {
     data: products,
@@ -58,7 +76,7 @@ const Home = () => {
                 className="product--title"
                 style={{ fontWeight: "500", fontSize: "14px" }}
               >
-                {product.title}
+                {truncateTitle(product.title)}
               </div>
               <div
                 className="ratesAndBtn"
@@ -91,7 +109,9 @@ const Home = () => {
 
                   <div>{product.rating.rate}</div>
                 </div>
-                <button className="add--cart--btn">Add To Cart</button>
+                <button className="add--cart--btn" onClick={IncreCartNumber}>
+                  Add To Cart
+                </button>
               </div>
             </div>
           </div>

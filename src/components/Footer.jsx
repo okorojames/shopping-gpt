@@ -33,7 +33,7 @@ const Footer = () => {
           className="fa-brands fa-twitter footer--icons"
           style={{ color: "#00acee" }}
         ></i>
-        <i class="fa-brands fa-instagram footer--icons"></i>
+        <i className="fa-brands fa-instagram footer--icons"></i>
         <i
           className="fa-brands fa-youtube footer--icons"
           style={{ color: "#c4302b" }}

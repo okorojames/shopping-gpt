@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import userIcon from "../assets/images/user-icon.jpg";
 import { Link } from "react-router-dom";
+import useCartNumberState from "../hooks-store/useCartNumberState";
 
 const Header = () => {
   // references
@@ -9,7 +10,7 @@ const Header = () => {
   const toggleNav = () => {
     nav_link_rows.current.classList.toggle("nav--toggle");
   };
-  const [itemNumber, setItemNumber] = useState(0);
+  const { cartNumber: itemNumber } = useCartNumberState();
   return (
     <header>
       <nav>
