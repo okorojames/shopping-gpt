@@ -4,12 +4,22 @@ import loaderIcon from "../assets/images/loader.gif";
 
 const Home = () => {
   //
+  const titleLimit = 45;
   const {
     data: products,
     pending,
     error,
   } = useFetch("https://fakestoreapi.com/products");
   //
+
+  const trucateTitle = (title) => {
+    
+    if(title.length > titleLimit){
+      let slicedTitle = title.slice(0, titleLimit);
+      return slicedTitle + "...";
+    }
+    return title;
+  }
   return (
     <div className="products--row" style={{ position: "relative" }}>
       {/* Loading state code block */}
@@ -58,7 +68,7 @@ const Home = () => {
                 className="product--title"
                 style={{ fontWeight: "500", fontSize: "14px" }}
               >
-                {product.title}
+                {trucateTitle(product.title)}
               </div>
               <div
                 className="ratesAndBtn"
