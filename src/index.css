@@ -42,8 +42,9 @@ img {
 }
 header,
 .app--container {
-  padding: 0 4rem;
-  box-shadow: 0 1px 10px rgba(206, 212, 218, 0.486);
+  padding: 20px 4rem;
+  /* box-shadow: 0 1px 10px rgba(206, 212, 218, 0.486); */
+  box-shadow: 0px 3px 7px 0px rgb(146 139 139 / 9%);
 }
 .app--container {
   min-height: calc(100vh - 74px - 128px);
@@ -209,14 +210,14 @@ nav {
   min-height: 100vh;
 }
 .product--card {
-  max-width: 28rem;
+  width: 28rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
   box-shadow: 0 0 0 1.5px rgba(134, 142, 150, 0.182);
   border-radius: 1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 1.5rem 2.5rem;
 }
 .product--img {
@@ -227,6 +228,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   gap: 1rem;
 }
 .product--rate--star {
@@ -291,7 +293,7 @@ nav {
 @media screen and (max-width: 976px) {
   .app--container,
   header {
-    padding: 0 1rem;
+    padding: 40px 1rem;
   }
   .nav--link--rows {
     width: 75%;
@@ -326,4 +328,20 @@ nav {
 }
 .nav--toggle.nav--link--rows {
   right: 0;
+}
+
+.product--title{
+  height: 50px;
+  white-space: break-spaces;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.product--img{
+  height: 100px;
+}
+
+@media  screen and (max-width : 800px) {
+  .app--container--row{
+    display: block;
+  }
 }

@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="app--container" style={{ marginTop: "20px" }}>
+      <div className="app--container">
         <div className="app--container--row">
           <CategoryTab />
           <Routes>
